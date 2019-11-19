@@ -5,4 +5,5 @@ We are dealing with:
 - Node.js
 - npm
 - Git
+- GitHub
 - VS Code
