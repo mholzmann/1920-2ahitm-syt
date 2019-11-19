@@ -6,4 +6,4 @@ We are dealing with:
 - npm
 - Git
 - GitHub
-- VS Code
+- Visual Studio Code
