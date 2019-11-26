@@ -14,6 +14,6 @@ console.log('-------------------------------------');
 // === doesn't work for NaN
 console.log(noNum === NaN);         // expected output: true, but actual output: false
 
-// use isNaN() to check whether value is NaN 
-console.log(isNaN(noNum));          // output: true 
-console.log(isNaN(num));            // output: false
+// use Number.isNaN() to check whether value is NaN 
+console.log(Number.isNaN(noNum));          // output: true 
+console.log(Number.isNaN(num));            // output: false
