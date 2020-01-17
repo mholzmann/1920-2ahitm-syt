@@ -1,3 +1,4 @@
+let num = 123;
 console.log('type of num is ' + typeof num);              // output: number
 console.log('value of num is ' + num);                    // output: 123
 
