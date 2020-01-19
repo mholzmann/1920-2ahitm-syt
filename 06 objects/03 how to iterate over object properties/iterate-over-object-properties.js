@@ -5,7 +5,7 @@ const person = {
     female: false
 };
 
-// you can iterate over all keys with for-of-loop
+// you can iterate over all keys with for-in-loop
 console.log('--------------------')
 console.log('keys of person:')
 for (const key in person) {
