@@ -4,7 +4,7 @@ const person = {
     lastName: 'Smith',
     age: 27,
     getName: function() {
-        return this.firstName+ " " + this.lastName;
+        return this.firstName + " " + this.lastName;
     }
 };
 
