@@ -27,7 +27,7 @@ setTimeout(callback2, 1000);
 setTimeout(callback3, 2000);
 
 /*
-notice: callback 3 is executed too late (> 7 seconds after program start)
+notice: callback 3 is executed too late (>= 6 seconds after program start)
 reason: callback 2 blocks the thread for 5 seconds (remember: Node.js is single-threaded)
 conclusion: blocking code must be avoided
 
