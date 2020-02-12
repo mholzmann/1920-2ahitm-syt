@@ -1,7 +1,10 @@
+require('fs');
 const args = process.argv.slice(2)
 
+
 const typedArgs = args.map(value => {
-    if (value === 'true' || value === 'false') {
+    const lowerCase = value.toLocaleLowerCase();
+    if (lowerCase === 'true' || lowerCase === 'false') {
         return Boolean(value);
     }
 

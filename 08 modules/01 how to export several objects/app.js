@@ -1,5 +1,5 @@
 // import of module circle.js
-const circle = require('./circle.js.js');
+const circle = require('./circle.js');
 
 // object circle contains all exported functions
 console.log("circle with radius of 4 cm:");
