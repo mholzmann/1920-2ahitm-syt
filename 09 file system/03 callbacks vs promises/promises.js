@@ -1,6 +1,8 @@
+// With promises you can avoid callback hell (see callback.js)
+// keywords 'async' and 'await' make usage of promises more comfortable
+
 const fsPromises = require('fs').promises;
 
-// keywords 'async' and 'await' are syntatic sugar for executing code asynchronously
 async function mergeFiles() {
     try {
         console.log('Reading part1.txt ...');

@@ -22,3 +22,5 @@ fs.readFile('./part1.txt', 'utf8', (err, data) => {
         });
     }
 });
+
+// Those nested callbacks are called "callback hell" ...
