@@ -1,11 +1,11 @@
 const fs = require('fs');
 
-fs.readFile('./part1.txt', {encoding: 'utf8'}, (err, data) => {
+fs.readFile('./part1.txt', 'utf8', (err, data) => {
     if (err) {
         console.error(err.message);
     } else {
         let text = data;
-        fs.readFile('./part2.txt', {encoding: 'utf8'}, (err, data) => {
+        fs.readFile('./part2.txt', 'utf8', (err, data) => {
             if (err) {
                 console.error(err.message);
             } else {
@@ -15,7 +15,7 @@ fs.readFile('./part1.txt', {encoding: 'utf8'}, (err, data) => {
                     if (err) {
                         console.error(err.message);
                     } else {
-                        console.log('wrote file successfully');
+                        console.log('Merged files successfully.');
                     }
                 });        
             }
