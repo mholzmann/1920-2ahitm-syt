@@ -1,4 +1,7 @@
-/**
+// Prevent redirection on form submit
+document.getElementById('form').onsubmit = (event) => event.preventDefault();
+
+ /**
  * Fetching a JSON file across the network 
  */
 async function loadPokemon() {
