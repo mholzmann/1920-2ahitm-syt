@@ -25,11 +25,12 @@ You can execute ngrok without installation by using `npx`. With following comman
 ```bash
 npx ngrok http 3000
 ```
+
 ![img](./images/ngrok.png)
 
 ### Install ngrok globally
 
-If you often use ngrok you can install it globally:
+If you often use ngrok you should install it globally:
 
 ```bash
 npm install ngrok -g
@@ -43,7 +44,7 @@ ngrok http 3000
 
 ### Install ngrok locally
 
-Unfortunately, permission problems can make a global installation a little bit tricky. A simple solution is to install ngrok locally in your project directory as a development dependency. 
+Unfortunately, permission problems can make a global installation a little bit tricky. A simple solution is to install ngrok locally in your project directory as a development dependency.
 
 Open your project directory in the terminal. Execute `npm init` (if you haven't already done) and install ngrok afterwards:
 
@@ -58,3 +59,35 @@ npx ngrok http 3000
 ```
 
 The downside of this approach is, that you have to install ngrok in every project you need it.
+
+## nodemon
+
+[nodemon](https://www.npmjs.com/package/nodemon) is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
+
+### Install nodemon globally
+
+If you often use nodemon you should install it globally:
+
+```bash
+npm install -g nodemon
+```
+
+Then you can execute your `app.js` with nodemon:
+
+```bash
+nodemon app.js
+```
+
+### Install nodemon locally
+
+Alternatively it's possible to install nodemon as a development dependency of your project:
+
+```bash
+npm install --save-dev nodemon
+```
+
+Then you can execute your `app.js` with nodemon by following command:
+
+```bash
+npx nodemon app.js
+```
