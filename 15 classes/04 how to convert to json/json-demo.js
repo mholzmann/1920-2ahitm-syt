@@ -39,17 +39,19 @@ class Person {
         }
     }
 
-    static fromJSON(json) {
-        const person = JSON.parse(json);
-        return new Person(person.firstName, person.lastName, person.age);
+    static fromJSON(personJSON) {
+        return new Person(personJSON.firstName, personJSON.lastName, personJSON.age);
     }
 }
 
-const person = new Person('John', 'Smith', 34);
-console.log(person);
+const john = new Person('John', 'Smith', 34);
+console.log(john);
 
-const personJSON = JSON.stringify(person);
-console.log(personJSON);
+const johnString = JSON.stringify(john);
+console.log(johnString);
 
-const newPerson = Person.fromJSON(personJSON);
-console.log(newPerson);
+const johnJSON = JSON.parse(johnString);
+console.log(johnJSON);
+
+const johnClone = Person.fromJSON(johnJSON);
+console.log(johnClone);
