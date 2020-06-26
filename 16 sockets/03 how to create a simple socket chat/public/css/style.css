@@ -1,0 +1,52 @@
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+html { 
+  font: 13px Helvetica, Arial; 
+}
+
+h1 {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.list { 
+  list-style-type: none; 
+  margin: 0; 
+  padding: 5; 
+}
+
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.message-form { 
+  display: flex;
+  padding: 5px; 
+  width: 100%; 
+}
+
+.message-form input { 
+  flex-grow: 1;
+  margin-right: 5px; 
+}
+
+.message-list {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.message-list li { 
+  padding: 5px 10px; 
+}
+
+.message-list li:nth-child(odd) { 
+  background: lightgrey; 
+}
